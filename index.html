@@ -1,204 +1,183 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Clínica Saúde Total</title>
   <link rel="stylesheet" href="css/style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Merriweather:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
-    <div class="container">
+    <div class="header-conteudo">
       <h1>Clínica Saúde Total</h1>
-      <nav>
-        <ul>
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#servicos">Serviços</a></li>
-          <li><a href="#equipe">Equipe</a></li>
-          <li><a href="#convenios">Convênios</a></li>
-          <li><a href="#depoimentos">Depoimentos</a></li>
-          <li><a href="#blog">Dicas</a></li>
-          <li><a href="#faq">FAQ</a></li>
-          <li><a href="#info">Informações</a></li>
-          <li><a href="#contato">Contato</a></li>
-        </ul>
-      </nav>
+      <p class="subtitulo">Cuidando da sua saúde com excelência desde 2008</p>
+      <a href="#contato" class="cta-botao">Agende sua consulta</a>
     </div>
+    <nav>
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#equipe">Equipe</a></li>
+        <li><a href="#convenios">Convênios</a></li>
+        <li><a href="#depoimentos">Depoimentos</a></li>
+        <li><a href="#blog">Dicas</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#info">Informações</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
   </header>
 
   <div class="decorativa-top"></div>
 
-  <main>
+  <main class="container">
     <section id="sobre">
-      <div class="container">
-        <h2>Sobre a Clínica</h2>
-        <img src="https://github.com/EnzoSCap/Landing-Page-Clinica/blob/main/images/Recep%C3%A7%C3%A3o%20da%20Cl%C3%ADnica.jpg?raw=true" alt="Recepção da Clínica" style="max-width: 100%; border-radius: 10px; margin-bottom: 20px;">
-        <p class="justificado">Fundada em 2008, a Clínica Saúde Total é referência em atendimento humanizado e saúde de qualidade. Com uma estrutura moderna, diversas especialidades e uma equipe altamente qualificada, oferecemos serviços com conforto, ética e tecnologia de ponta. Atendemos convênios, consultas particulares e disponibilizamos suporte completo ao paciente em cada etapa do cuidado. Nossa missão é promover bem-estar, qualidade de vida e resultados eficazes para quem confia na gente.</p>
-      </div>
+      <h2>Sobre a Clínica</h2>
+      <img src="https://github.com/EnzoSCap/Landing-Page-Clinica/blob/main/images/Recep%C3%A7%C3%A3o%20da%20Cl%C3%ADnica.jpg?raw=true" alt="Recepção da Clínica" class="imagem-sobre">
+      <p class="justificado">Fundada em 2008, a Clínica Saúde Total é referência em atendimento humanizado e saúde de qualidade. Com uma estrutura moderna, diversas especialidades e uma equipe altamente qualificada, oferecemos serviços com conforto, ética e tecnologia de ponta. Atendemos convênios, consultas particulares e disponibilizamos suporte completo ao paciente em cada etapa do cuidado. Nossa missão é promover bem-estar, qualidade de vida e resultados eficazes para quem confia na gente.</p>
     </section>
 
-    <section id="servicos">
-      <div class="container">
-        <h2>Serviços Oferecidos</h2>
-        <div class="grid">
-          <div class="card">
-            <img src="https://github.com/EnzoSCap/Landing-Page-Clinica/blob/main/images/Exame%20de%20Vista.jpg?raw=true" alt="Exame de Vista"/>
-            <h3>Exame de Vista</h3>
-            <p>Exames oftalmológicos modernos com diagnóstico preciso para sua saúde ocular.</p>
-          </div>
-          <div class="card">
-            <img src="https://github.com/EnzoSCap/Landing-Page-Clinica/blob/main/images/Grupo%20De%20M%C3%A9dicos%20Fazendo%20Opera%C3%A7%C3%A3o%20Dentro%20Da%20Sala.jpg?raw=true" alt="Cirurgias"/>
-            <h3>Cirurgias Especializadas</h3>
-            <p>Realizamos procedimentos cirúrgicos com total segurança e profissionais experientes.</p>
-          </div>
-          <div class="card">
-            <img src="https://github.com/EnzoSCap/Landing-Page-Clinica/blob/main/images/Medico%20em%20Servi%C3%A7o.jpg?raw=true" alt="Consultas Clínicas"/>
-            <h3>Consultas Clínicas</h3>
-            <p>Atendimento com clínicos gerais para diagnóstico e acompanhamento de sua saúde.</p>
-          </div>
-          <div class="card">
-            <img src="https://github.com/EnzoSCap/Landing-Page-Clinica/blob/main/images/Pediatria.jpg?raw=true" alt="Atendimento Pediátrico"/>
-            <h3>Atendimento Pediátrico</h3>
-            <p>Cuidados com as crianças em todas as fases, com médicos especialistas em pediatria.</p>
-          </div>
-          <div class="card">
-            <img src="https://github.com/EnzoSCap/Landing-Page-Clinica/blob/main/images/Medica.jpg?raw=true" alt="Ginecologia"/>
-            <h3>Ginecologia e Saúde da Mulher</h3>
-            <p>Consultas, exames e acompanhamento para a saúde integral da mulher.</p>
-          </div>
+    <section id="servicos" class="light">
+      <h2>Serviços Oferecidos</h2>
+      <div class="grid">
+        <div class="card">
+          <img src="https://github.com/EnzoSCap/Landing-Page-Clinica/blob/main/images/Exame%20de%20Vista.jpg?raw=true" alt="Exame de Vista"/>
+          <h3>Exame de Vista</h3>
+          <p>Exames oftalmológicos modernos com diagnóstico preciso para sua saúde ocular.</p>
+        </div>
+        <div class="card">
+          <img src="https://github.com/EnzoSCap/Landing-Page-Clinica/blob/main/images/Grupo%20De%20M%C3%A9dicos%20Fazendo%20Opera%C3%A7%C3%A3o%20Dentro%20Da%20Sala.jpg?raw=true" alt="Cirurgias"/>
+          <h3>Cirurgias Especializadas</h3>
+          <p>Realizamos procedimentos cirúrgicos com total segurança e profissionais experientes.</p>
+        </div>
+        <div class="card">
+          <img src="https://github.com/EnzoSCap/Landing-Page-Clinica/blob/main/images/Medico%20em%20Servi%C3%A7o.jpg?raw=true" alt="Consultas Clínicas"/>
+          <h3>Consultas Clínicas</h3>
+          <p>Atendimento com clínicos gerais para diagnóstico e acompanhamento de sua saúde.</p>
+        </div>
+        <div class="card">
+          <img src="https://github.com/EnzoSCap/Landing-Page-Clinica/blob/main/images/Pediatria.jpg?raw=true" alt="Pediatria"/>
+          <h3>Pediatria</h3>
+          <p>Cuidados com as crianças em todas as fases, com médicos especialistas em pediatria.</p>
+        </div>
+        <div class="card">
+          <img src="https://github.com/EnzoSCap/Landing-Page-Clinica/blob/main/images/Medica.jpg?raw=true" alt="Ginecologia"/>
+          <h3>Ginecologia</h3>
+          <p>Consultas, exames e acompanhamento completo da saúde da mulher.</p>
         </div>
       </div>
     </section>
 
-    <section id="equipe" class="light">
-      <div class="container">
-        <h2>Equipe Médica</h2>
-        <p class="justificado">Nossa equipe é composta por profissionais de diversas especialidades comprometidos com seu bem-estar.</p>
-        <img src="https://github.com/EnzoSCap/Landing-Page-Clinica/blob/main/images/Equipe%20Medica.jpg?raw=true" alt="Equipe Médica" style="max-width: 100%; border-radius: 10px; margin: 20px 0;">
-        <ul class="lista-equipe">
-          <li><strong>Dr. Ricardo Alves</strong> – Cardiologista</li>
-          <li><strong>Dr. Felipe Moura</strong> – Ortopedista</li>
-          <li><strong>Dr. Lucas Pereira</strong> – Clínico Geral</li>
-          <li><strong>Dra. Mariana Costa</strong> – Pediatra</li>
-          <li><strong>Dra. Helena Martins</strong> – Ginecologista</li>
-        </ul>
-        <div class="grid">
-          <div class="card">
-            <img src="https://github.com/EnzoSCap/Landing-Page-Clinica/blob/main/images/Bruno%20Rodrigues%20Fisioterapeuta.jpg?raw=true" alt="Bruno Rodrigues - Fisioterapeuta">
-            <p><strong>Bruno Rodrigues</strong> – Fisioterapeuta</p>
-          </div>
-          <div class="card">
-            <img src="https://github.com/EnzoSCap/Landing-Page-Clinica/blob/main/images/M%C3%A9dico.jpg?raw=true" alt="Dr. André Lima">
-            <p><strong>Dr. André Lima</strong> – Neurologista</p>
-          </div>
+    <section id="equipe">
+      <h2>Equipe Médica</h2>
+      <div class="grid">
+        <div class="card">
+          <img src="https://github.com/EnzoSCap/Landing-Page-Clinica/blob/main/images/Bruno%20Rodrigues%20Fisioterapeuta.jpg?raw=true" alt="Bruno Rodrigues">
+          <h3>Bruno Rodrigues</h3>
+          <p>Fisioterapeuta</p>
+        </div>
+        <div class="card">
+          <img src="https://github.com/EnzoSCap/Landing-Page-Clinica/blob/main/images/M%C3%A9dico.jpg?raw=true" alt="Dr. André Lima">
+          <h3>Dr. André Lima</h3>
+          <p>Neurologista</p>
+        </div>
+        <div class="card">
+          <img src="https://github.com/EnzoSCap/Landing-Page-Clinica/blob/main/images/Equipe%20Medica.jpg?raw=true" alt="Equipe Médica">
+          <h3>Equipe Central</h3>
+          <p>Cardiologia, Pediatria, Ginecologia, Ortopedia, Clínica Geral</p>
+        </div>
+      </div>
+    </section>
+    <section id="convenios" class="light">
+      <h2>Convênios Atendidos</h2>
+      <p class="justificado">Atendemos os principais planos de saúde para oferecer mais comodidade aos nossos pacientes.</p>
+      <div class="grid">
+        <div class="card"><h3>Unimed</h3></div>
+        <div class="card"><h3>Bradesco Saúde</h3></div>
+        <div class="card"><h3>Amil</h3></div>
+        <div class="card"><h3>NotreDame</h3></div>
+        <div class="card"><h3>SulAmérica</h3></div>
+      </div>
+    </section>
+
+    <section id="depoimentos">
+      <h2>O que dizem nossos pacientes</h2>
+      <div class="grid">
+        <div class="card">
+          <p>"Fui muito bem atendido. Médicos atenciosos e estrutura impecável!"</p>
+          <p><strong>— João M.</strong></p>
+        </div>
+        <div class="card">
+          <p>"Excelente clínica! Sempre indico para meus familiares."</p>
+          <p><strong>— Ana C.</strong></p>
+        </div>
+        <div class="card">
+          <p>"Consulta online rápida e prática. E ainda me indicaram uma clínica na minha cidade."</p>
+          <p><strong>— Marcelo S.</strong></p>
         </div>
       </div>
     </section>
 
-    <section id="convenios">
-      <div class="container">
-        <h2>Convênios Atendidos</h2>
-        <ul class="info-lista">
-          <li>Unimed</li>
-          <li>Bradesco Saúde</li>
-          <li>Amil</li>
-          <li>NotreDame Intermédica</li>
-          <li>SulAmérica</li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="depoimentos" class="light">
-      <div class="container">
-        <h2>O que dizem nossos pacientes</h2>
-        <div class="grid">
-          <div class="card">
-            <p>"Fui muito bem atendido. Médicos atenciosos e estrutura impecável!"</p>
-            <p><strong>— João M.</strong></p>
-          </div>
-          <div class="card">
-            <p>"Excelente clínica! Sempre indico para meus familiares."</p>
-            <p><strong>— Ana C.</strong></p>
-          </div>
-          <div class="card">
-            <p>"Consulta online rápida e prática. E ainda me indicaram uma clínica na minha cidade."</p>
-            <p><strong>— Marcelo S.</strong></p>
-          </div>
+    <section id="blog" class="light">
+      <h2>Dicas de Saúde</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Alimentação e Imunidade</h3>
+          <p>Dicas de como fortalecer o sistema imunológico com alimentos saudáveis.</p>
+        </div>
+        <div class="card">
+          <h3>Cuidados com a Visão</h3>
+          <p>Saiba como prevenir doenças oculares e quando procurar um oftalmologista.</p>
+        </div>
+        <div class="card">
+          <h3>Exercício e Coração</h3>
+          <p>Como a atividade física pode ajudar a manter seu coração saudável.</p>
         </div>
       </div>
     </section>
 
-    <section id="blog">
-      <div class="container">
-        <h2>Dicas de Saúde</h2>
-        <div class="grid">
-          <div class="card">
-            <h3>Alimentação e Imunidade</h3>
-            <p>Dicas de como fortalecer o sistema imunológico com alimentos saudáveis.</p>
-          </div>
-          <div class="card">
-            <h3>Cuidados com a Visão</h3>
-            <p>Saiba como prevenir doenças oculares e quando procurar um oftalmologista.</p>
-          </div>
-          <div class="card">
-            <h3>Exercício e Coração</h3>
-            <p>Como a atividade física pode ajudar a manter seu coração saudável.</p>
-          </div>
-        </div>
-      </div>
+    <section id="faq">
+      <h2>Perguntas Frequentes</h2>
+      <ul class="info-lista">
+        <li><strong>Como agendar uma consulta?</strong> Você pode agendar pelo formulário ou WhatsApp.</li>
+        <li><strong>Quais convênios são aceitos?</strong> Veja a lista acima com os principais planos.</li>
+        <li><strong>Atendem fora de SP?</strong> Sim! Oferecemos orientação e indicamos clínicas parceiras.</li>
+      </ul>
     </section>
 
-    <section id="faq" class="light">
-      <div class="container">
-        <h2>Perguntas Frequentes</h2>
-        <ul class="info-lista">
-          <li><strong>Como agendar uma consulta?</strong> Você pode agendar pelo formulário ou WhatsApp.</li>
-          <li><strong>Atendem quais convênios?</strong> Unimed, Bradesco, Amil, SulAmérica e mais.</li>
-          <li><strong>Como funciona o atendimento online?</strong> Você agenda, e realizamos por videochamada, ideal para dúvidas rápidas.</li>
-        </ul>
-      </div>
+    <section id="info" class="light">
+      <h2>Informações Gerais</h2>
+      <ul class="info-lista">
+        <li><strong>Endereço:</strong> Rua da Saúde, 123 - Centro, São Paulo - SP</li>
+        <li><strong>Horário:</strong> Segunda a Sexta, das 08h às 18h</li>
+        <li><strong>Telefone:</strong> (11) 1234-5678</li>
+        <li><strong>Email:</strong> contato@saudetotal.com.br</li>
+      </ul>
     </section>
-
-    <section id="info">
-      <div class="container">
-        <h2>Informações Gerais</h2>
-        <ul class="info-lista">
-          <li><strong>Endereço:</strong> Rua da Saúde, 123 - Centro, São Paulo - SP</li>
-          <li><strong>Horário:</strong> Segunda a Sexta, das 08h às 18h</li>
-          <li><strong>Telefone:</strong> (11) 1234-5678</li>
-          <li><strong>Email:</strong> contato@saudetotal.com.br</li>
-        </ul>
-        <p style="margin-top: 20px;">📡 <strong>Atendimento Online:</strong> Disponível para consultas rápidas. Fora de SP? Indicamos uma clínica parceira no seu estado.</p>
-      </div>
-    </section>
-
-    <div class="faixa-curva"></div>
 
     <section id="contato">
-      <div class="container">
-        <h2>Fale Conosco</h2>
-        <form>
-          <input type="text" name="nome" placeholder="Nome" required/>
-          <input type="email" name="email" placeholder="E-mail" required/>
-          <input type="text" name="cidade" placeholder="Cidade" required/>
-          <select name="estado" required>
-            <option value="">Estado</option>
-            <option>SP</option>
-            <option>Outros</option>
-          </select>
-          <button type="submit">Enviar</button>
-        </form>
-      </div>
+      <h2>Fale Conosco</h2>
+      <form>
+        <input type="text" placeholder="Nome completo" required />
+        <input type="email" placeholder="E-mail" required />
+        <input type="text" placeholder="Cidade" required />
+        <select required>
+          <option value="">Estado</option>
+          <option value="SP">SP</option>
+          <option value="Outros">Outros</option>
+        </select>
+        <button type="submit">Enviar</button>
+      </form>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Clínica Saúde Total - Todos os direitos reservados.</p>
+    <p>&copy; 2025 Clínica Saúde Total. Todos os direitos reservados.</p>
   </footer>
 
-  <a href="https://wa.me/5511999999999" target="_blank" style="position: fixed; bottom: 20px; right: 20px;">
-    <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp">
+  <a href="https://wa.me/5511999999999" target="_blank">
+    <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp" style="position: fixed; bottom: 20px; right: 20px;">
   </a>
 </body>
 </html>

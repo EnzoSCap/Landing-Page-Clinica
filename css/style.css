@@ -26,10 +26,16 @@ header h1 {
   letter-spacing: 2px;
 }
 
+header p {
+  font-size: 1.2em;
+}
+
 /* Seções */
 section {
   padding: 40px;
   text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 h2 {

@@ -1,125 +1,133 @@
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+/* Resetando as margens e padding para um layout consistente */
+* {
   margin: 0;
   padding: 0;
-  background-color: #f4f8fc;
-  color: #333;
-}
-
-header {
-  background-color: #1e88e5;
-  color: white;
-  padding: 30px 0;
-  text-align: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-header h1 {
-  margin: 0;
-  font-size: 2.5em;
-  font-weight: bold;
-}
-
-section {
-  padding: 40px 20px;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-h2 {
-  color: #1e88e5;
-  border-bottom: 2px solid #ddd;
-  padding-bottom: 10px;
-  margin-bottom: 30px;
-  font-size: 1.8em;
-}
-
-.servicos, .equipe {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-}
-
-.servico, .membro {
-  background-color: white;
-  border-radius: 10px;
-  padding: 15px;
-  flex: 1 1 280px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-  text-align: center;
-  transition: transform 0.2s ease, box-shadow 0.3s ease;
-}
-
-.servico:hover, .membro:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.servico img, .membro img {
-  width: 100%;
-  max-height: 200px; /* Limita a altura das imagens */
-  object-fit: cover;
-  border-radius: 8px;
-  margin-bottom: 15px;
-  transition: transform 0.3s ease;
-}
-
-.servico img:hover, .membro img:hover {
-  transform: scale(1.05);
-}
-
-form {
-  background-color: white;
-  padding: 25px;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  max-width: 500px;
-  margin: 0 auto;
-  margin-top: 40px;
-}
-
-form label {
-  display: block;
-  margin-top: 15px;
-  margin-bottom: 5px;
-  font-weight: bold;
-}
-
-form input[type="text"],
-form input[type="email"] {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
   box-sizing: border-box;
 }
 
-form input[type="submit"] {
-  margin-top: 20px;
-  padding: 10px 20px;
-  background-color: #1e88e5;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+/* Corpo da página */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
 }
 
-form input[type="submit"]:hover {
-  background-color: #1565c0;
-}
-
-footer {
-  background-color: #1e88e5;
-  color: white;
+/* Cabeçalho */
+header {
+  background-color: #4a90e2;
+  color: #fff;
   text-align: center;
-  padding: 15px 0;
-  margin-top: 40px;
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 2.5em;
+  letter-spacing: 2px;
+}
+
+/* Seções */
+section {
+  padding: 40px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Imagens */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Efetuar zoom nas imagens ao passar o mouse */
+img:hover {
+  transform: scale(1.05);
+}
+
+/* Card de serviços e membros */
+.servico, .membro {
+  display: inline-block;
+  width: 30%;
+  margin: 20px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.servico:hover, .membro:hover {
+  transform: translateY(-10px);
+}
+
+/* Responsividade - Exibindo 1 imagem em telas menores */
+@media screen and (max-width: 768px) {
+  .servico, .membro {
+    width: 80%;
+    margin: 10px auto;
+  }
+}
+
+/* Formulário */
+form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+form input, form button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+form button {
+  background-color: #4a90e2;
+  color: #fff;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #357ab7;
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
 }
 
 footer p {
-  margin: 0;
+  font-size: 0.9em;
 }
 
+/* Ajuste para botões no formulário */
+button {
+  padding: 15px 20px;
+  background-color: #4a90e2;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1.1em;
+}
 
+button:hover {
+  background-color: #357ab7;
+}

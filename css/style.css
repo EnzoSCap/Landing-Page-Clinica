@@ -1,5 +1,5 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f4f8fc;
@@ -9,7 +9,7 @@ body {
 header {
   background-color: #1e88e5;
   color: white;
-  padding: 20px 0;
+  padding: 30px 0;
   text-align: center;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -30,6 +30,7 @@ h2 {
   border-bottom: 2px solid #ddd;
   padding-bottom: 10px;
   margin-bottom: 30px;
+  font-size: 1.8em;
 }
 
 .servicos, .equipe {
@@ -43,15 +44,22 @@ h2 {
   background-color: white;
   border-radius: 10px;
   padding: 15px;
-  flex: 1 1 300px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  flex: 1 1 280px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.servico:hover, .membro:hover {
+  transform: scale(1.02);
 }
 
 .servico img, .membro img {
   max-width: 100%;
-  height: auto;
-  border-radius: 10px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
 }
 
 form {
@@ -101,3 +109,4 @@ footer {
   padding: 15px 0;
   margin-top: 40px;
 }
+

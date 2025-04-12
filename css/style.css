@@ -17,6 +17,7 @@ header {
 header h1 {
   margin: 0;
   font-size: 2.5em;
+  font-weight: bold;
 }
 
 section {
@@ -47,19 +48,25 @@ h2 {
   flex: 1 1 280px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   text-align: center;
-  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
 }
 
 .servico:hover, .membro:hover {
-  transform: scale(1.02);
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .servico img, .membro img {
   max-width: 100%;
-  height: 180px;
+  height: 200px;
   object-fit: cover;
   border-radius: 8px;
   margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+.servico img:hover, .membro img:hover {
+  transform: scale(1.05);
 }
 
 form {
@@ -69,6 +76,7 @@ form {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   max-width: 500px;
   margin: 0 auto;
+  margin-top: 40px;
 }
 
 form label {
@@ -110,3 +118,6 @@ footer {
   margin-top: 40px;
 }
 
+footer p {
+  margin: 0;
+}

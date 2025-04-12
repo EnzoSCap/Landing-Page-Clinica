@@ -1,29 +1,112 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <title>Clínica Vida Saudável</title>
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clínica Saúde Mais</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header, footer {
+      background-color: #0a5d6f;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    h1, h2 {
+      color: #0a5d6f;
+    }
+    .container {
+      padding: 20px;
+    }
+    .servico, .equipe {
+      margin-bottom: 30px;
+    }
+    img {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+      display: block;
+      margin-top: 10px;
+    }
+    form {
+      margin-top: 30px;
+    }
+    input, select {
+      margin-bottom: 10px;
+      padding: 8px;
+      width: 100%;
+      max-width: 300px;
+    }
+  </style>
 </head>
 <body>
-  <h1>Bem-vindo à Clínica Vida Saudável</h1>
-  <h2>Nossos Serviços</h2>
-  <img src="images/servico1.jpg" alt="Serviço 1">
-  <img src="images/servico2.jpg" alt="Serviço 2">
-  <p>Oferecemos atendimento médico, exames laboratoriais e aconselhamento nutricional.</p>
+  <header>
+    <h1>Clínica Saúde Mais</h1>
+    <p>Cuidando de você com tecnologia e carinho</p>
+  </header>
 
-  <h2>Nossa Equipe</h2>
-  <img src="images/equipe1.jpg" alt="Dra. Ana - Nutricionista">
-  <img src="images/equipe2.jpg" alt="Dr. João - Clínico Geral">
-  <img src="images/equipe3.jpg" alt="Enf. Paula - Enfermeira Chefe">
+  <div class="container">
+    <h2>Serviços</h2>
 
-  <h2>Fale Conosco</h2>
-  <form>
-    <label>Nome: <input type="text" name="nome"></label><br>
-    <label>E-mail: <input type="email" name="email"></label><br>
-    <label>Cidade: <input type="text" name="cidade"></label><br>
-    <label>Estado: <input type="text" name="estado"></label><br>
-    <button type="submit">Enviar</button>
-  </form>
+    <div class="servico">
+      <h3>Atendimento e Agendamento Presencial</h3>
+      <p>Recepção moderna e acolhedora para garantir conforto e eficiência no seu atendimento.</p>
+      <img src="https://github.com/EnzoSCap/Landing-Page-Clinica/blob/main/images/Recep%C3%A7%C3%A3o%20da%20Cl%C3%ADnica.jpg?raw=true" alt="Recepção da clínica">
+    </div>
+
+    <div class="servico">
+      <h3>Exames Laboratoriais e de Imagem</h3>
+      <p>Realizamos exames laboratoriais, de sangue, imagem e visão com equipamentos modernos e profissionais especializados.</p>
+      <img src="https://github.com/EnzoSCap/Landing-Page-Clinica/blob/main/images/Exame%20de%20Vista.jpg?raw=true" alt="Exame de vista">
+    </div>
+
+    <h2>Nossa Equipe</h2>
+
+    <div class="equipe">
+      <h3>Dr. Ricardo Lopes – Clínico Geral</h3>
+      <h3>Dra. Juliana Alves – Pediatra</h3>
+      <h3>Dr. Marcelo Tavares – Ortopedista</h3>
+      <img src="https://github.com/EnzoSCap/Landing-Page-Clinica/blob/main/images/Equipe%20Medica.jpg?raw=true" alt="Equipe médica">
+    </div>
+
+    <div class="equipe">
+      <h3>Dr. Felipe Costa – Cirurgião Geral</h3>
+      <img src="https://github.com/EnzoSCap/Landing-Page-Clinica/blob/main/images/Grupo%20De%20M%C3%A9dicos%20Fazendo%20Opera%C3%A7%C3%A3o%20Dentro%20Da%20Sala.jpg?raw=true" alt="Cirurgiões em operação">
+    </div>
+
+    <div class="equipe">
+      <h3>Dra. Fernanda Souza – Ginecologista</h3>
+      <h3>Dr. Bruno Martins – Neurologista</h3>
+      <img src="https://github.com/EnzoSCap/Landing-Page-Clinica/blob/main/images/Medico%20em%20Servi%C3%A7o.jpg?raw=true" alt="Médicos em atendimento">
+    </div>
+
+    <h2>Fale Conosco</h2>
+    <form>
+      <label>Nome:</label><br>
+      <input type="text" name="nome" /><br>
+      <label>E-mail:</label><br>
+      <input type="email" name="email" /><br>
+      <label>Cidade:</label><br>
+      <input type="text" name="cidade" /><br>
+      <label>Estado:</label><br>
+      <select name="estado">
+        <option value="">Selecione</option>
+        <option value="SP">SP</option>
+        <option value="RJ">RJ</option>
+        <option value="MG">MG</option>
+        <option value="BA">BA</option>
+        <!-- Pode adicionar mais -->
+      </select><br>
+      <input type="submit" value="Enviar" />
+    </form>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Clínica Saúde Mais. Todos os direitos reservados.</p>
+  </footer>
 </body>
 </html>

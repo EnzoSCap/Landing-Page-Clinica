@@ -8,7 +8,7 @@
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
-  background-color: #f9f9f9;
+  background-color: #f4faff;
   color: #333;
   line-height: 1.8;
 }
@@ -26,10 +26,21 @@ body {
 
 /* Header */
 header {
-  background-color: #3498db;
+  background-color: #007acc;
   color: white;
   padding: 40px 0;
   text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+header::after {
+  content: '';
+  background: url('https://www.transparenttextures.com/patterns/symphony.png');
+  opacity: 0.05;
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  z-index: -1;
 }
 
 header h1 {
@@ -58,10 +69,14 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* Títulos de seção */
+/* Seções */
+section {
+  margin-bottom: 60px;
+}
+
 section h2 {
   font-size: 2.4rem;
-  color: #3498db;
+  color: #007acc;
   margin-bottom: 30px;
   text-align: center;
 }
@@ -76,8 +91,8 @@ section h2 {
 
 .card {
   background-color: white;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
   padding: 25px;
   max-width: 350px;
   text-align: center;
@@ -86,24 +101,24 @@ section h2 {
 }
 
 .card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-6px);
 }
 
 .card img {
   max-width: 100%;
-  border-radius: 8px;
+  border-radius: 10px;
   margin-bottom: 15px;
 }
 
 .card h3 {
   font-size: 1.5rem;
-  color: #2980b9;
+  color: #009688;
   margin-bottom: 10px;
 }
 
 /* Light section */
 .light {
-  background-color: #f0f4f8;
+  background-color: #e8f4f8;
 }
 
 /* Lista da equipe */
@@ -135,31 +150,36 @@ form {
 form input,
 form select {
   padding: 12px;
-  border-radius: 5px;
+  border-radius: 6px;
   border: 1px solid #ccc;
   font-size: 1rem;
 }
 
+form select {
+  background-color: #fff;
+}
+
 form button {
-  background-color: #3498db;
+  background-color: #007acc;
   color: white;
-  padding: 12px;
-  font-size: 1rem;
+  padding: 14px;
+  font-size: 1.1rem;
   border: none;
-  border-radius: 5px;
+  border-radius: 6px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 form button:hover {
-  background-color: #2980b9;
+  background-color: #005f99;
 }
 
 /* Footer */
 footer {
-  background-color: #3498db;
+  background-color: #007acc;
   color: white;
   text-align: center;
   padding: 25px 0;
   font-size: 0.95rem;
+  margin-top: 40px;
 }

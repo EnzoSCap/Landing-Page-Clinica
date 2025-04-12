@@ -1,4 +1,4 @@
-/* Reset básico */
+/* Reset */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -19,9 +19,19 @@ body {
   padding: 40px 20px;
 }
 
-/* Justificado */
 .justificado {
   text-align: justify;
+}
+
+section {
+  margin-bottom: 60px;
+}
+
+section h2 {
+  font-size: 2.4rem;
+  color: #007acc;
+  margin-bottom: 30px;
+  text-align: center;
 }
 
 /* Header */
@@ -31,7 +41,6 @@ header {
   padding: 40px 0;
   text-align: center;
   position: relative;
-  z-index: 1;
 }
 
 header::after {
@@ -40,22 +49,23 @@ header::after {
   opacity: 0.05;
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  z-index: -1;
+  z-index: 0;
 }
 
 header h1 {
   font-family: 'Merriweather', serif;
   font-size: 3.5rem;
-  margin-bottom: 15px;
+  position: relative;
+  z-index: 1;
 }
 
 nav ul {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 25px;
+  gap: 20px;
   list-style: none;
-  padding: 0;
+  padding-top: 10px;
 }
 
 nav a {
@@ -69,23 +79,11 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* Seções */
-section {
-  margin-bottom: 60px;
-}
-
-section h2 {
-  font-size: 2.4rem;
-  color: #007acc;
-  margin-bottom: 30px;
-  text-align: center;
-}
-
-/* Grid */
+/* Grid Cards */
 .grid {
   display: flex;
-  gap: 30px;
   flex-wrap: wrap;
+  gap: 30px;
   justify-content: center;
 }
 
@@ -116,13 +114,8 @@ section h2 {
   margin-bottom: 10px;
 }
 
-/* Light section */
-.light {
-  background-color: #e8f4f8;
-}
-
-/* Lista da equipe */
-.lista-equipe {
+/* Listas */
+.lista-equipe, .info-lista {
   margin: 20px 0;
   padding-left: 20px;
   list-style-type: disc;
@@ -130,12 +123,9 @@ section h2 {
   line-height: 1.8;
 }
 
-/* Informações */
-.info-lista {
-  list-style: none;
-  font-size: 1.1rem;
-  padding: 0;
-  line-height: 1.8;
+/* Light BG */
+.light {
+  background-color: #eaf6fb;
 }
 
 /* Formulário */
@@ -147,16 +137,11 @@ form {
   gap: 15px;
 }
 
-form input,
-form select {
+form input, form select {
   padding: 12px;
   border-radius: 6px;
   border: 1px solid #ccc;
   font-size: 1rem;
-}
-
-form select {
-  background-color: #fff;
 }
 
 form button {
@@ -181,5 +166,17 @@ footer {
   text-align: center;
   padding: 25px 0;
   font-size: 0.95rem;
-  margin-top: 40px;
+}
+
+/* WhatsApp Floating */
+a[href*="wa.me"] {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  transition: transform 0.3s ease;
+}
+
+a[href*="wa.me"]:hover {
+  transform: scale(1.1);
 }

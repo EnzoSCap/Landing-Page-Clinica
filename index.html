@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clínica de Saúde</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Clínica Saúde Total</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Bem-vindo à Clínica de Saúde</h1>
+        <h1>Clínica Saúde Total</h1>
         <nav>
             <ul>
                 <li><a href="#servicos">Serviços</a></li>
@@ -19,58 +19,64 @@
     </header>
 
     <section id="servicos">
-        <h2>Serviços Oferecidos</h2>
-        <div class="servicos">
+        <h2>Nossos Serviços</h2>
+        <div class="servicos-container">
             <div class="servico">
                 <img src="https://github.com/EnzoSCap/Landing-Page-Clinica/blob/main/images/Exame%20de%20Vista.jpg?raw=true" alt="Exame de Vista">
-                <h3>Exame de Vista</h3>
-                <p>Oferecemos exames de vista de alta precisão para diagnóstico precoce e tratamento adequado.</p>
+                <h3>Exames de Vista</h3>
+                <p>Realizamos exames completos para avaliar a saúde ocular.</p>
             </div>
             <div class="servico">
                 <img src="https://github.com/EnzoSCap/Landing-Page-Clinica/blob/main/images/Grupo%20De%20M%C3%A9dicos%20Fazendo%20Opera%C3%A7%C3%A3o%20Dentro%20Da%20Sala.jpg?raw=true" alt="Cirurgia">
-                <h3>Cirurgia Especializada</h3>
-                <p>Equipe médica especializada em diversas áreas da cirurgia, oferecendo segurança e alta qualidade.</p>
+                <h3>Procedimentos Cirúrgicos</h3>
+                <p>Nossos cirurgiões especializados garantem a sua segurança durante os procedimentos.</p>
             </div>
         </div>
     </section>
 
     <section id="equipe">
-        <h2>Equipe Médica</h2>
-        <div class="equipe">
+        <h2>Conheça Nossa Equipe</h2>
+        <div class="equipe-container">
             <div class="membro">
                 <img src="https://github.com/EnzoSCap/Landing-Page-Clinica/blob/main/images/Equipe%20Medica.jpg?raw=true" alt="Equipe Médica">
                 <h3>Dr. João Silva</h3>
                 <p>Cirurgião Geral</p>
             </div>
             <div class="membro">
-                <img src="https://github.com/EnzoSCap/Landing-Page-Clinica/blob/main/images/Medico%20em%20Servi%C3%A7o.jpg?raw=true" alt="Médico em Serviço">
-                <h3>Dra. Maria Oliveira</h3>
+                <img src="https://github.com/EnzoSCap/Landing-Page-Clinica/blob/main/images/Medico%20em%20Servi%C3%A7o.jpg?raw=true" alt="Atendimento">
+                <h3>Dr. Ana Souza</h3>
                 <p>Clínica Geral</p>
+            </div>
+            <div class="membro">
+                <img src="https://github.com/EnzoSCap/Landing-Page-Clinica/blob/main/images/Recep%C3%A7%C3%A3o%20da%20Cl%C3%ADnica.jpg?raw=true" alt="Recepção">
+                <h3>Equipe de Atendimento</h3>
+                <p>Garantindo o melhor atendimento desde o momento da chegada.</p>
             </div>
         </div>
     </section>
 
     <section id="contato">
-        <h2>Contato</h2>
-        <form action="#" method="post">
+        <h2>Entre em Contato</h2>
+        <p>Preencha o formulário abaixo para saber mais sobre nossos serviços.</p>
+        <form>
             <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required>
-
+            <input type="text" id="nome" name="nome" required><br>
+            
             <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" required>
-
+            <input type="email" id="email" name="email" required><br>
+            
             <label for="cidade">Cidade:</label>
-            <input type="text" id="cidade" name="cidade" required>
-
+            <input type="text" id="cidade" name="cidade" required><br>
+            
             <label for="estado">Estado:</label>
-            <input type="text" id="estado" name="estado" required>
+            <input type="text" id="estado" name="estado" required><br>
 
             <button type="submit">Enviar</button>
         </form>
     </section>
 
     <footer>
-        <p>Clínica de Saúde - Todos os direitos reservados &copy; 2025</p>
+        <p>&copy; 2025 Clínica Saúde Total - Todos os direitos reservados</p>
     </footer>
 </body>
 </html>

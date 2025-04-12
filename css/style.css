@@ -1,4 +1,4 @@
-/* Reset */
+/* Reset geral */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -43,20 +43,11 @@ header {
   position: relative;
 }
 
-header::after {
-  content: '';
-  background: url('https://www.transparenttextures.com/patterns/symphony.png');
-  opacity: 0.05;
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  z-index: 0;
-}
-
 header h1 {
   font-family: 'Merriweather', serif;
-  font-size: 3.5rem;
-  position: relative;
+  font-size: 3.2rem;
   z-index: 1;
+  position: relative;
 }
 
 nav ul {
@@ -79,7 +70,7 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* Grid Cards */
+/* Grid de Cards */
 .grid {
   display: flex;
   flex-wrap: wrap;
@@ -115,7 +106,8 @@ nav a:hover {
 }
 
 /* Listas */
-.lista-equipe, .info-lista {
+.lista-equipe,
+.info-lista {
   margin: 20px 0;
   padding-left: 20px;
   list-style-type: disc;
@@ -123,7 +115,7 @@ nav a:hover {
   line-height: 1.8;
 }
 
-/* Light BG */
+/* Seções alternadas com fundo claro */
 .light {
   background-color: #eaf6fb;
 }
@@ -137,7 +129,8 @@ form {
   gap: 15px;
 }
 
-form input, form select {
+form input,
+form select {
   padding: 12px;
   border-radius: 6px;
   border: 1px solid #ccc;
@@ -166,9 +159,10 @@ footer {
   text-align: center;
   padding: 25px 0;
   font-size: 0.95rem;
+  margin-top: 40px;
 }
 
-/* WhatsApp Floating */
+/* Botão flutuante WhatsApp */
 a[href*="wa.me"] {
   position: fixed;
   bottom: 20px;

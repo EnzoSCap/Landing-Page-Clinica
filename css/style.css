@@ -1,86 +1,118 @@
+/* Reset básico */
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  font-family: 'Segoe UI', sans-serif;
-  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
   background-color: #f9f9f9;
   color: #333;
-  line-height: 1.6;
+  line-height: 1.8;
 }
 
 .container {
   max-width: 1100px;
   margin: auto;
-  padding: 20px;
+  padding: 40px 20px;
 }
 
+/* Header */
 header {
   background-color: #3498db;
   color: white;
-  padding: 20px 0;
+  padding: 30px 0;
   text-align: center;
 }
 
-header nav ul {
-  list-style: none;
-  padding: 0;
+header h1 {
+  font-family: 'Merriweather', serif;
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+nav ul {
   display: flex;
   justify-content: center;
-  gap: 30px;
-  margin-top: 10px;
+  gap: 25px;
+  flex-wrap: wrap;
+  padding: 10px 0;
+  list-style: none;
 }
 
-header nav ul li a {
+nav a {
   color: white;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: bold;
+  font-size: 1.1rem;
 }
 
-section {
-  padding: 60px 0;
+nav a:hover {
+  text-decoration: underline;
 }
 
+/* Títulos de seção */
 section h2 {
-  text-align: center;
+  font-size: 2.2rem;
   color: #3498db;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
+  text-align: center;
 }
 
+/* Grid */
 .grid {
   display: flex;
-  flex-wrap: wrap;
   gap: 30px;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
 .card {
   background-color: white;
   border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   padding: 20px;
-  max-width: 300px;
+  max-width: 350px;
   text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
 }
 
 .card img {
   max-width: 100%;
-  border-radius: 10px;
+  border-radius: 8px;
   margin-bottom: 15px;
 }
 
-.card.equipe img {
-  border-radius: 50%;
-  border: 3px solid #3498db;
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
+.card h3 {
+  font-size: 1.4rem;
+  color: #2980b9;
+  margin-bottom: 10px;
 }
 
+/* Light section */
+.light {
+  background-color: #f0f4f8;
+}
+
+/* Lista da equipe */
+.lista-equipe {
+  margin-top: 15px;
+  padding-left: 20px;
+  list-style-type: disc;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Formulário */
 form {
-  max-width: 500px;
-  margin: auto;
+  max-width: 600px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -90,30 +122,29 @@ form input {
   padding: 12px;
   border-radius: 5px;
   border: 1px solid #ccc;
+  font-size: 1rem;
 }
 
 form button {
   background-color: #3498db;
   color: white;
   padding: 12px;
+  font-size: 1rem;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  font-weight: bold;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s ease;
 }
 
 form button:hover {
   background-color: #2980b9;
 }
 
-.light {
-  background-color: #ecf0f1;
-}
-
+/* Footer */
 footer {
   background-color: #3498db;
   color: white;
   text-align: center;
-  padding: 15px 0;
+  padding: 20px 0;
+  font-size: 0.95rem;
 }

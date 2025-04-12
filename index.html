@@ -1,78 +1,76 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Clínica Saúde Mais</title>
-  <head>
   <meta charset="UTF-8">
-  <title>Clínica Bem Viver</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clínica Saúde Bem-Estar</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
   <header>
-    <h1>Clínica Saúde Mais</h1>
-    <p>Cuidando de você com tecnologia e carinho</p>
+    <h1>Clínica Saúde Bem-Estar</h1>
+    <p>Oferecendo o melhor para você e sua saúde!</p>
   </header>
 
-  <div class="container">
-    <h2>Serviços</h2>
+  <section id="servicos">
+    <h2>Nossos Serviços</h2>
 
     <div class="servico">
-      <h3>Atendimento e Agendamento Presencial</h3>
-      <p>Recepção moderna e acolhedora para garantir conforto e eficiência no seu atendimento.</p>
-      <img src="https://github.com/EnzoSCap/Landing-Page-Clinica/blob/main/images/Recep%C3%A7%C3%A3o%20da%20Cl%C3%ADnica.jpg?raw=true" alt="Recepção da clínica">
+      <img src="https://github.com/EnzoSCap/Landing-Page-Clinica/blob/main/images/Exame%20de%20Vista.jpg?raw=true" alt="Exame de Vista">
+      <h3>Exame de Vista</h3>
+      <p>Realize exames de vista com nossos especialistas.</p>
     </div>
 
     <div class="servico">
-      <h3>Exames Laboratoriais e de Imagem</h3>
-      <p>Realizamos exames laboratoriais, de sangue, imagem e visão com equipamentos modernos e profissionais especializados.</p>
-      <img src="https://github.com/EnzoSCap/Landing-Page-Clinica/blob/main/images/Exame%20de%20Vista.jpg?raw=true" alt="Exame de vista">
+      <img src="https://github.com/EnzoSCap/Landing-Page-Clinica/blob/main/images/Grupo%20De%20M%C3%A9dicos%20Fazendo%20Opera%C3%A7%C3%A3o%20Dentro%20Da%20Sala.jpg?raw=true" alt="Cirurgia Especializada">
+      <h3>Cirurgia Especializada</h3>
+      <p>Equipe altamente capacitada para realizar os melhores procedimentos cirúrgicos.</p>
     </div>
 
-    <h2>Nossa Equipe</h2>
+    <div class="servico">
+      <img src="https://github.com/EnzoSCap/Landing-Page-Clinica/blob/main/images/Medico%20em%20Servi%C3%A7o.jpg?raw=true" alt="Atendimento Médico">
+      <h3>Atendimento Médico</h3>
+      <p>Consultas com médicos especializados, garantindo um atendimento de qualidade.</p>
+    </div>
+  </section>
 
-    <div class="equipe">
-      <h3>Dr. Ricardo Lopes – Clínico Geral</h3>
-      <h3>Dra. Juliana Alves – Pediatra</h3>
-      <h3>Dr. Marcelo Tavares – Ortopedista</h3>
-      <img src="https://github.com/EnzoSCap/Landing-Page-Clinica/blob/main/images/Equipe%20Medica.jpg?raw=true" alt="Equipe médica">
+  <section id="equipe">
+    <h2>Equipe Médica</h2>
+
+    <div class="membro">
+      <img src="https://github.com/EnzoSCap/Landing-Page-Clinica/blob/main/images/Equipe%20Medica.jpg?raw=true" alt="Equipe Médica">
+      <h3>Dr. João Silva</h3>
+      <p>Cirurgião Geral</p>
     </div>
 
-    <div class="equipe">
-      <h3>Dr. Felipe Costa – Cirurgião Geral</h3>
-      <img src="https://github.com/EnzoSCap/Landing-Page-Clinica/blob/main/images/Grupo%20De%20M%C3%A9dicos%20Fazendo%20Opera%C3%A7%C3%A3o%20Dentro%20Da%20Sala.jpg?raw=true" alt="Cirurgiões em operação">
+    <div class="membro">
+      <img src="https://github.com/EnzoSCap/Landing-Page-Clinica/blob/main/images/Medico%20em%20Servi%C3%A7o.jpg?raw=true" alt="Equipe Médica">
+      <h3>Dra. Ana Souza</h3>
+      <p>Oftalmologista</p>
     </div>
 
-    <div class="equipe">
-      <h3>Dra. Fernanda Souza – Ginecologista</h3>
-      <h3>Dr. Bruno Martins – Neurologista</h3>
-      <img src="https://github.com/EnzoSCap/Landing-Page-Clinica/blob/main/images/Medico%20em%20Servi%C3%A7o.jpg?raw=true" alt="Médicos em atendimento">
+    <div class="membro">
+      <img src="https://github.com/EnzoSCap/Landing-Page-Clinica/blob/main/images/Recep%C3%A7%C3%A3o%20da%20Cl%C3%ADnica.jpg?raw=true" alt="Equipe Médica">
+      <h3>Dr. Pedro Lima</h3>
+      <p>Cardiologista</p>
     </div>
+  </section>
 
+  <section id="contato">
     <h2>Fale Conosco</h2>
-    <form>
-      <label>Nome:</label><br>
-      <input type="text" name="nome" /><br>
-      <label>E-mail:</label><br>
-      <input type="email" name="email" /><br>
-      <label>Cidade:</label><br>
-      <input type="text" name="cidade" /><br>
-      <label>Estado:</label><br>
-      <select name="estado">
-        <option value="">Selecione</option>
-        <option value="SP">SP</option>
-        <option value="RJ">RJ</option>
-        <option value="MG">MG</option>
-        <option value="BA">BA</option>
-        <!-- Pode adicionar mais -->
-      </select><br>
-      <input type="submit" value="Enviar" />
+    <form action="submit_form.php">
+      <input type="text" name="nome" placeholder="Nome" required>
+      <input type="email" name="email" placeholder="E-mail" required>
+      <input type="text" name="cidade" placeholder="Cidade" required>
+      <input type="text" name="estado" placeholder="Estado" required>
+      <button type="submit">Enviar</button>
     </form>
-  </div>
+  </section>
 
   <footer>
-    <p>&copy; 2025 Clínica Saúde Mais. Todos os direitos reservados.</p>
+    <p>&copy; 2025 Clínica Saúde Bem-Estar | Todos os direitos reservados</p>
   </footer>
+
 </body>
 </html>

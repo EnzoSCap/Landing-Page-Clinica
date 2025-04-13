@@ -25,12 +25,7 @@ A landing page apresenta:
 - Imagens e ícones gratuitos (Icons8, imagens do próprio repositório)
 
 ## 💡 Como Visualizar o Projeto
-
-1. Baixe ou clone este repositório:
-
-2. Abra o arquivo `index.html` no seu navegador.
-
-3. Ou visualize diretamente pelo GitHub Pages:
+Visualize diretamente pelo GitHub Pages:
 👉 https://enzoscap.github.io/Landing-Page-Clinica/
 
 ## 🎬 Apresentação em Vídeo

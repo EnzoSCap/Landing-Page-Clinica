@@ -31,7 +31,7 @@ A landing page apresenta:
 2. Abra o arquivo `index.html` no seu navegador.
 
 3. Ou visualize diretamente pelo GitHub Pages:
-👉 (https://enzoscap.github.io/Landing-Page-Clinica/)
+👉 https://enzoscap.github.io/Landing-Page-Clinica/
 
 ## 🎬 Apresentação em Vídeo
 

@@ -29,8 +29,7 @@ Visualize diretamente pelo GitHub Pages:
 
 ## 🎬 Apresentação em Vídeo
 
-O vídeo explicativo com demonstração do projeto pode ser acessado neste link:
-📹 [Vídeo no YouTube ou Google Drive](URL_DO_VIDEO)
+O vídeo explicativo com demonstração do projeto pode ser acessado no link presente no PDF
 
 ## 📌 Observações
 

@@ -21,8 +21,7 @@ A landing page apresenta:
 
 - HTML5
 - CSS3
-- Responsividade com Flexbox
-- Imagens e ícones gratuitos (Icons8, imagens do próprio repositório)
+- Imagens e ícones gratuitos (Pexels e Unsplash)
 
 ## 💡 Como Visualizar o Projeto
 Visualize diretamente pelo GitHub Pages:
